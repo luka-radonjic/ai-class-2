@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover Serbia | Home</title>
+  <meta name="description" content="Discover Serbia: an introduction to the Balkan country of Belgrade, the Danube, hearty cuisine and centuries of rich culture and history.">
+  <meta name="theme-color" content="#0c4076">
+
+  <link rel="icon" href="favicon/favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/video.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header site-header--overlay">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">
+        <img src="images/Flag_of_Serbia.svg.webp" alt="Flag of Serbia, Discover Serbia home" width="56" height="37">
+        <span class="logo__text" aria-hidden="true">Discover Serbia</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="cuisine.html">Cuisine</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <source src="media/belgrade-video.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow" lang="sr-Latn">Dobrodošli u Srbiju</p>
+        <h1 id="hero-title">Discover Serbia</h1>
+        <p class="hero__lead">
+          Where the Sava meets the Danube, Serbia blends Ottoman, Byzantine and
+          Central European influences into a culture of warm hospitality, lively
+          music and unforgettable food.
+        </p>
+        <div class="hero__actions">
+          <a class="btn" href="cuisine.html">Explore the cuisine</a>
+          <a class="btn btn--ghost" href="culture.html">Learn the culture</a>
+        </div>
+      </div>
+
+      <button class="hero__toggle" type="button" hidden>Pause background video</button>
+    </section>
+
+    <section class="section" aria-labelledby="intro-title">
+      <div class="container">
+        <h2 id="intro-title">Heart of the Balkans</h2>
+        <p class="section__intro">
+          Serbia is a landlocked country in Southeast Europe, at the crossroads of
+          the Pannonian Plain and the central Balkans. Its capital, Belgrade, is
+          one of the oldest continuously inhabited cities in Europe.
+        </p>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Belgrade</h3>
+            <p>
+              The capital sits at the meeting point of two great rivers and is
+              watched over by the Belgrade Fortress in Kalemegdan Park.
+            </p>
+          </article>
+          <article class="card">
+            <h3>The Danube</h3>
+            <p>
+              Europe's second-longest river flows through northern Serbia and
+              carves the dramatic Iron Gates gorge along the Romanian border.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Two Alphabets</h3>
+            <p>
+              Serbian is written in both Cyrillic and Latin script, and street
+              signs and newspapers often use both.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Plan Your Visit</h2>
+        <p class="section__intro">
+          Have a question about travelling to Serbia? Send us a message.
+          Fields marked with <span class="required" aria-hidden="true">*</span> are required.
+        </p>
+
+        <form class="contact-form" action="#" method="post">
+          <fieldset>
+            <legend>Contact us</legend>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Full name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option value="travel">Travel tips</option>
+                <option value="food">Food &amp; restaurants</option>
+                <option value="culture">Culture &amp; history</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <p class="form-note">This is a student project. Messages are not sent anywhere.</p>
+
+            <button class="btn" type="submit">Send message</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>&copy; 2026 Discover Serbia. A student project for BCIT FWDP 1500.</p>
+      <p><a href="credits.html">Image, video and content credits</a></p>
+    </div>
+  </footer>
+</body>
+</html>
